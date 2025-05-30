@@ -10,7 +10,7 @@ export default function Header() {
               AOUBAK
             </a>
           </div>
-          <ul className=" flex space-x-4">
+          <ul className="flex space-x-4 hidden md:flex">
             <li>
               <a className="hover:text-gray-400" href="/">Home</a>
             </li>
