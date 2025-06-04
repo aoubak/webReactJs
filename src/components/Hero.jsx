@@ -4,7 +4,7 @@ import hero3dImage from '../assets/images/hero_3d.png'; // Adjust the path as ne
 
 export default function Hero() {
 return (
-    <div className='md:mt-16 md:mb-10'>
+    <div className='md:mt-16 mt-5 md:mb-10'>
         {/* <section className="bg-linear-65 bg-gradient-to-t from-slate-800  to-slate-700 text-white py-16 md:py-20"> */}
         <section className="bg-radial from-cyan-900 from-40% to-slat-700 text-white py-16 md:py-20">
             <div className="container mx-auto p-4 flex flex-col md:flex-row justify-center items-center gap-8">

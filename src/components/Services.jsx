@@ -16,7 +16,7 @@ function Services() {
         </p>
       </div>
       <div className="flex flex-col md:flex-row md:justify-between items-center gap-8">
-        <div className="w-[100%] md:w-[35%] md:text-left mt-4 mb-8 md:mb-0">
+        <div className="w-[100%] md:w-[50%] md:text-left mt-4 mb-8 md:mb-0">
           <h1 className="text-4xl font-bold mb-4">
             Explore Our Digital Services
           </h1>
@@ -33,8 +33,8 @@ function Services() {
             Get More
           </a>
         </div>
-        <div className="w-[100%] md:[70%] flex flex-col md:flex-row md:flex-wrap justify-start items-center gap-4 md:p-6">
-          <div className="bg-gray-800 w-[100%]  m:w-72 p-6 rounded-lg shadow-lg min-h-[250px] border border-cyan-700 ">
+        <div className="w-[100%] md:[50%] flex flex-col md:flex-row md:flex-wrap justify-end items-center gap-4 md:p-6">
+          <div className="bg-gray-800 w-[100%]  md:w-[40%] p-6 rounded-lg shadow-lg min-h-[250px] border border-cyan-700 ">
             <h2 className="text-2xl font-bold mb-4">
               Search Engine Optimization (SEO)
             </h2>
@@ -43,21 +43,21 @@ function Services() {
               organic traffic.
             </p>
           </div>
-          <div className="bg-gray-800 w-[100%]  m:w-72 p-6 rounded-lg shadow-lg min-h-[250px] border border-cyan-700 ">
+          <div className="bg-gray-800 w-[100%]  md:w-[40%] p-6 rounded-lg shadow-lg min-h-[250px] border border-cyan-700 ">
             <h2 className="text-2xl font-bold mb-4">Social Media Marketing</h2>
             <p className="text-base">
               Engage your audience and build brand loyalty through targeted
               social media campaigns.
             </p>
           </div>
-          <div className="bg-gray-800 w-[100%]  m:w-72 p-6 rounded-lg shadow-lg min-h-[250px] border border-cyan-700 ">
+          <div className="bg-gray-800 w-[100%]  md:w-[40%] p-6 rounded-lg shadow-lg min-h-[250px] border border-cyan-700 ">
             <h2 className="text-2xl font-bold mb-4">Content Marketing</h2>
             <p className="text-base">
               Create valuable content that attracts, informs, and converts your
               target audience.
             </p>
           </div>
-          <div className="bg-gray-800 w-[100%]  m:w-72 p-6 rounded-lg shadow-lg min-h-[250px] border border-cyan-700 ">
+          <div className="bg-gray-800 w-[100%]  md:w-[40%] p-6 rounded-lg shadow-lg min-h-[250px] border border-cyan-700 ">
             <h2 className="text-2xl font-bold mb-4">Web Design & Development</h2>
             <p className="text-base">
               We craft modern, responsive, and SEO-friendly websites designed to reflect your brand and convert visitors into customers.
