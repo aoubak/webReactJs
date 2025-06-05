@@ -4,6 +4,7 @@ import Header from "./components/header";
 import Hero from "./components/Hero";
 import Portfolio from "./components/Portfolio";
 import Services from "./components/Services";
+import Testmonials from "./components/Testmonials";
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
      <About />
      <Services />
      <Portfolio />
+     <Testmonials />
     </>
   )
 }
