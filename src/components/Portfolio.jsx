@@ -13,7 +13,7 @@ function Portfolio() {
         </p>
       </div>
       <div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 p-4">
+        <div className="flex flex-col sm:flex-col-2 md:flex-row justify-center items-center p-4 gap-4">
           {/* Example Portfolio Item */}
           <div className="bg-gray-800 p-4 rounded-lg shadow-lg shadow-cyan-700/5 border border-cyan-700">   
             <img src={port1} alt="Project 1" className="w-full h-48 object-cover rounded-t-lg mb-4" />
