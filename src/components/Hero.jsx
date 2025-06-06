@@ -29,7 +29,7 @@ return (
                     <img
                         src={hero3dImage}
                         alt="Hero Image"
-                        className="w-11/12 sm:w-4/5 md:w-3/4 h-[300px] md:h-[400px] object-cover rounded-xl max-w-sm md:max-w-xl"
+                        className="h-[300px] sm:w-4/5 md:w-3/4  md:h-[400px] object-cover rounded-xl max-w-sm md:max-w-xl"
                     />
                 </div>
             </div>
