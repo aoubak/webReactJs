@@ -76,13 +76,13 @@ function Contact() {
               <h1 className=" font-bold">Follow our social media</h1>
               <div className="mt-2">
                 <div className="flex space-x-2 ">
-                  <span className="bg-cyan-700 p-2 hover:bg-cyan-800 cursor-pointer rounded-md border border-cyan-500">
+                  <span className="bg-cyan-700 p-2 duration-300  hover:bg-cyan-800 cursor-pointer rounded-md border border-cyan-500">
                     <FaFacebookF />
                   </span>
-                  <span className="bg-cyan-700 p-2 hover:bg-cyan-800 cursor-pointer rounded-md border border-cyan-500">
+                  <span className="bg-cyan-700 p-2 duration-300  hover:bg-cyan-800 cursor-pointer rounded-md border border-cyan-500">
                     <FaTwitter />
                   </span>
-                  <span className="bg-cyan-700 p-2 hover:bg-cyan-800 cursor-pointer rounded-md border border-cyan-500">
+                  <span className="bg-cyan-700 p-2 duration-300  hover:bg-cyan-800 cursor-pointer rounded-md border border-cyan-500">
                     <FaLinkedinIn />
                   </span>
                 </div>
@@ -138,7 +138,7 @@ function Contact() {
             </div>
              <a
             href="/contact"
-            className="bg-cyan-900 border border-cyan-600 hover:bg-cyan-600 text-white font-bold py-2 px-6 rounded inline-block"
+            className="bg-cyan-900 border duration-300  border-cyan-600 hover:bg-cyan-600 text-white font-bold py-2 px-6 rounded inline-block"
           >
             Submit
           </a>

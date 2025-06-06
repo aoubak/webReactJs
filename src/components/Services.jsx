@@ -7,10 +7,11 @@ import { Telescope } from 'lucide-react';
 import { Dribbble } from 'lucide-react';
 import { ChartLine } from 'lucide-react';
 import { CodeXml } from 'lucide-react';
+import bgColor from "../assets/images/color.png";
 
 function Services() {
   return (
-    <section className="container mx-auto p-4 text-[#efeeee]">
+    <section style={{ backgroundImage: `url(${bgColor})` }} className="container   bg-cover bg-center  mx-auto p-4 text-[#efeeee]">
       <div className="md:text-center mb-8">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
         <p className="text-base sm:text-lg">
@@ -36,7 +37,7 @@ function Services() {
           </p>
           <a
             href="/contact"
-            className="bg-cyan-900 border border-cyan-600 hover:bg-cyan-600 text-white font-bold py-2 px-6 rounded inline-block"
+            className="bg-cyan-900 border duration-300  border-cyan-600 hover:bg-cyan-600 text-white font-bold py-2 px-6 rounded inline-block"
           >
             Get More
           </a>
@@ -49,19 +50,24 @@ function Services() {
             <h2 className="text-2xl font-bold mb-4">
               Search Engine Optimization
             </h2>
-            <p className="text-base">
+            {/* <p className="text-base">
               {`Optimize your website to rank higher in search results and attract
-              organic traffic.`.slice(0,50)}...
-            </p>
+              organic traffic.`.slice(0,70)}...
+            </p> */}
+             <p className="text-base line-clamp-2">
+              Optimize your website to rank higher in search results and attract
+              organic traffic.
+            </p> 
           </div>
           <div className="bg-gray-800 w-[100%]  md:w-[45%] p-6 rounded-lg shadow-lg min-h-[250px] border border-cyan-700 ">
             <span className="bg-cyan-900 p-2 mb-2 border border-cyan-600  rounded text-white inline-flex items-center justify-center">
               <Dribbble className="w-6 h-6 text-cyan-400" strokeWidth={2.5}  />
             </span>
             <h2 className="text-2xl font-bold mb-4">Social Media Marketing</h2>
-            <p className="text-base">
-              {`Engage your audience and build brand loyalty through targeted
-              social media campaigns.`.slice(0,50)}...
+            
+            <p className="text-base line-clamp-2">
+              Engage your audience and build brand loyalty through targeted
+              social media campaigns.
             </p>
           </div>
           <div className="bg-gray-800 w-[100%]  md:w-[45%] p-6 rounded-lg shadow-lg min-h-[250px] border border-cyan-700 ">
@@ -69,9 +75,9 @@ function Services() {
               <ChartLine className="w-6 h-6 text-cyan-400" strokeWidth={2.5}  />
             </span>
             <h2 className="text-2xl font-bold mb-4">Content Marketing</h2>
-            <p className="text-base">
-              {`Create valuable content that attracts, informs, and converts your
-              target audience.`.slice(0,50)}...
+            <p className="text-base line-clamp-2">
+              Create valuable content that attracts, informs, and converts your
+              target audience.
             </p>
           </div>
           <div className="bg-gray-800 w-[100%]  md:w-[45%] p-6 rounded-lg shadow-lg min-h-[250px] border border-cyan-700 ">
@@ -83,7 +89,7 @@ function Services() {
             </h2>
             <p className="text-base">
               {`We craft modern, responsive, and SEO-friendly websites designed to
-              reflect your brand and convert visitors into customers.`.slice(0,50)}...
+              reflect your brand and convert visitors into customers.`.slice(0,60)}...
             </p>
           </div>
         </div>

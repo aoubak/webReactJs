@@ -56,7 +56,7 @@ export default function Header() {
            <div className="flex flex-col md:flex-row md:space-x-4">
              <li className="w-full md:w-auto">
               <a
-                className=" hover:bg-cyan-600 bg-cyan-700 rounded md:rounded-full px-4 py-2  mb-2 md:mb-0 block"
+                className=" hover:bg-cyan-600 bg-cyan-700 duration-300 rounded md:rounded-full px-4 py-2  mb-2 md:mb-0 block"
                 href="/login"
               >
                 Get a Quote
@@ -64,7 +64,7 @@ export default function Header() {
             </li>
             <li className="w-full md:w-auto">
               <a
-                className="hover:bg-cyan-600 bg-cyan-700 rounded md:rounded-full px-4 py-2 block"
+                className="hover:bg-cyan-600 bg-cyan-700  duration-300 rounded md:rounded-full px-4 py-2 block"
                 href="/register"
               >
                 Register

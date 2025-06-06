@@ -32,7 +32,7 @@ function Portfolio() {
             </p>
             <a
               href="/contact"
-              className="bg-cyan-900 mt-4 border border-cyan-600 hover:bg-cyan-600 text-white font-bold py-2 px-6 rounded inline-block"
+              className="bg-cyan-900 mt-4 duration-300  border border-cyan-600 hover:bg-cyan-600 text-white font-bold py-2 px-6 rounded inline-block"
             >
               Read More
             </a>
@@ -56,7 +56,7 @@ function Portfolio() {
             
             <a
               href="/contact"
-              className="bg-cyan-900 mt-4 border border-cyan-600 hover:bg-cyan-600 text-white font-bold py-2 px-6 rounded inline-block"
+              className="bg-cyan-900 mt-4 duration-300  border border-cyan-600 hover:bg-cyan-600 text-white font-bold py-2 px-6 rounded inline-block"
             >
               Read More
             </a>
@@ -89,7 +89,7 @@ function Portfolio() {
           {" "}
           <a
             href="/contact"
-            className=" mt-4 border border-cyan-600 hover:bg-cyan-600 text-white font-bold py-2 px-6 rounded inline-block"
+            className=" mt-4 border duration-300  border-cyan-600 hover:bg-cyan-600 text-white font-bold py-2 px-6 rounded inline-block"
           >
             View More
           </a>

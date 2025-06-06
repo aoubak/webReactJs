@@ -8,6 +8,7 @@ import { FaLocationDot } from "react-icons/fa6";
 function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-10 px-4 mt-10">
+      
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Company Info */}
         <div>
@@ -21,13 +22,13 @@ function Footer() {
             online experiences.
           </p>
           <div className="flex space-x-2 mt-4 ">
-            <span className="bg-cyan-700 p-2 hover:bg-cyan-800 cursor-pointer rounded-md border border-cyan-500">
+            <span className="bg-cyan-700 p-2 duration-300  hover:bg-cyan-800 cursor-pointer rounded-md border border-cyan-500">
               <FaFacebookF />
             </span>
-            <span className="bg-cyan-700 p-2 hover:bg-cyan-800 cursor-pointer rounded-md border border-cyan-500">
+            <span className="bg-cyan-700 p-2 duration-300  hover:bg-cyan-800 cursor-pointer rounded-md border border-cyan-500">
               <FaTwitter />
             </span>
-            <span className="bg-cyan-700 p-2 hover:bg-cyan-800 cursor-pointer rounded-md border border-cyan-500">
+            <span className="bg-cyan-700 p-2 duration-300  hover:bg-cyan-800 cursor-pointer rounded-md border border-cyan-500">
               <FaLinkedinIn />
             </span>
           </div>
@@ -88,14 +89,14 @@ function Footer() {
         {/* Contact Info */}
         <div>
           <h3 className="text-lg font-semibold mb-4">Get in Touch</h3>
-          <p className="text-sm flex items-center gap-2 mb-2 text-gray-400"><span className="text-lg bg-cyan-900 p-2 rounded-md text-cyan-300" ><FaEnvelope/></span> hello@youragency.com</p>
-          <p className="text-sm flex items-center gap-2 mb-2 text-gray-400"><span className="text-lg bg-cyan-900 p-2 rounded-md text-cyan-300" ><MdAddIcCall/></span>  +123 456 7890</p>
-          <p className="text-sm flex items-center gap-2 mb-2 text-gray-400"><span className="text-lg bg-cyan-900 p-2 rounded-md text-cyan-300" ><FaLocationDot/></span>  Mogadishu, Somalia</p>
+          <p className="text-sm flex items-center gap-2 mb-2 text-gray-400"><span className="text-lg bg-cyan-900 p-2 rounded-md hover:bg-cyan-700 duration-300 cursor-pointer text-cyan-300" ><FaEnvelope/></span> hello@youragency.com</p>
+          <p className="text-sm flex items-center gap-2 mb-2 text-gray-400"><span className="text-lg bg-cyan-900 p-2 rounded-md hover:bg-cyan-700 duration-300 cursor-pointer text-cyan-300" ><MdAddIcCall/></span>  +123 456 7890</p>
+          <p className="text-sm flex items-center gap-2 mb-2 text-gray-400"><span className="text-lg bg-cyan-900 p-2 rounded-md hover:bg-cyan-700 duration-300 cursor-pointer text-cyan-300" ><FaLocationDot/></span>  Mogadishu, Somalia</p>
         </div>
       </div>
 
       <div className="mt-8 border-t border-gray-700 pt-6 text-center text-xs text-gray-500">
-        © {new Date().getFullYear()} YourAgency. All rights reserved.
+        © {new Date().getFullYear()} AOUBAK. All rights reserved.
       </div>
     </footer>
   );
