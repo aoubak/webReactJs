@@ -17,7 +17,7 @@ export default function Header() {
             </a>
           </div>
           <ul
-            className={`absolute top-full h-screen w-full bg-gray-800/95 p-4 transition-all duration-700 z-50 ease-in-out md:static md:h-auto md:w-3xl md:flex md:justify-between md:space-x-4 md:p-0 md:bg-transparent ${
+            className={`absolute top-18 rounded border border-cyan-800 h-screen w-full bg-gray-800  p-4 transition-all duration-700 z-50 ease-in-out md:static md:h-auto md:w-3xl md:flex md:justify-between md:space-x-4 md:p-0 md:bg-transparent ${
               isOpen ? "left-0" : "-left-100 "
             }`}
           >
