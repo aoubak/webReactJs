@@ -4,7 +4,7 @@ import { TiTick } from "react-icons/ti";
 
 function About() {
   return (
-    <section className="container mx-auto p-4 text-[#efeeee]">
+    <section id="about" className="container mx-auto p-4 text-[#efeeee]">
       <div className="md:text-center mb-8">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Who We Are</h1>
         <p className="text-base sm:text-lg">

@@ -11,7 +11,7 @@ import bgColor from "../assets/images/color.png";
 
 function Services() {
   return (
-    <section style={{ backgroundImage: `url(${bgColor})` }} className="container   bg-cover bg-center  mx-auto p-4 text-[#efeeee]">
+    <section id="services" style={{ backgroundImage: `url(${bgColor})` }} className="container   bg-cover bg-center  mx-auto p-4 text-[#efeeee]">
       <div className="md:text-center mb-8">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
         <p className="text-base sm:text-lg">

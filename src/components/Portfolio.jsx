@@ -5,7 +5,7 @@ import port3 from "../assets/images/port_3.png"; // Adjust the path as necessary
 
 function Portfolio() {
   return (
-    <section className="container mx-auto text-[#efeeee] ">
+    <section id="portfolio" className="container mx-auto text-[#efeeee] ">
       <div className="md:text-center md:mb-8 p-4">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Portfolio</h1>
         <p className="text-base sm:text-lg">

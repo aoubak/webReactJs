@@ -28,30 +28,30 @@ export default function Header() {
               </a>
             </li>
             <li className="w-full md:w-auto bg-gray-600/50 md:bg-transparent mb-2 md:mb-0 rounded-md ">
-              <a className="hover:text-gray-400 block p-2" href="/about">
+              <a className="hover:text-gray-400 block p-2" href="#about">
                 About
               </a>
             </li>
             <li className="w-full md:w-auto bg-gray-600/50 md:bg-transparent mb-2 md:mb-0 rounded-md ">
-              <a className="hover:text-gray-400 block p-2" href="/contact">
+              <a className="hover:text-gray-400 block p-2" href="#services">
                 Services
               </a>
             </li>
             <li className="w-full md:w-auto bg-gray-600/50 md:bg-transparent mb-2 md:mb-0 rounded-md ">
-              <a className="hover:text-gray-400 block p-2" href="/contact">
+              <a className="hover:text-gray-400 block p-2" href="#portfolio">
                 Portfolio
               </a>
             </li>
             <li className="w-full md:w-auto bg-gray-600/50 md:bg-transparent mb-2 md:mb-0 rounded-md ">
-              <a className="hover:text-gray-400 block p-2" href="/contact">
+              <a className="hover:text-gray-400 block p-2" href="#contact">
                 Contact
               </a>
             </li>
-            <li className="w-full md:w-auto bg-gray-600/50 md:bg-transparent mb-2 md:mb-0 rounded-md ">
+            {/* <li className="w-full md:w-auto bg-gray-600/50 md:bg-transparent mb-2 md:mb-0 rounded-md ">
               <a className="hover:text-gray-400 block p-2" href="/contact">
                 Blog
               </a>
-            </li>
+            </li> */}
             </div>
            <div className="flex flex-col md:flex-row md:space-x-4">
              <li className="w-full md:w-auto">
