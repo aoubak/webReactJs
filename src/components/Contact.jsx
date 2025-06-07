@@ -8,7 +8,7 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn, FaStar } from "react-icons/fa";
 
 function Contact() {
   return (
-    <section className="container mx-auto">
+    <section className="container mx-auto mt-16">
       {/* Section header */}
       <div className="md:text-center md:mb-8 p-4">
         <h1 className="text-4xl md:text-5xl font-bold mb-4">
