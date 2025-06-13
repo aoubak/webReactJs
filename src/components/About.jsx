@@ -94,8 +94,8 @@ function About() {
           <div className="flex-1 w-full md:border-l-1 md:border-cyan-300  md:flex md:justify-center">
             
              <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
               viewport={{ once: true, amount: 0.3 }}
             ><img
