@@ -2,6 +2,7 @@
 import About from "./components/About";
 import Contact from "./components/Contact";
 import CTA_action from "./components/CTA_action";
+import Featers from "./components/featers";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -16,6 +17,7 @@ function App() {
     <>
      <Header />
      <Hero />
+     <Featers/>
      <About />
      <Services />
      <Portfolio />
