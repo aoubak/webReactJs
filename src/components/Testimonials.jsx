@@ -14,11 +14,19 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper/modules";
 import TestimonialCard from "./TestimonialCard";
 
+import { motion } from "framer-motion";
+
 const Testimonials = () => {
   return (
     <section className="container mx-auto">
       <div className="md:text-center md:mb-8 p-4">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8,  }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
+ <h1 className="text-4xl md:text-5xl font-bold mb-4">
           What Our Clients Say
         </h1>
         <p className="text-base sm:text-lg">
@@ -26,10 +34,17 @@ const Testimonials = () => {
           they share their experience working with us. Here’s what a few of them
           had to say about our digital marketing work.
         </p>
+        </motion.div>
+       
       </div>
-
-      <div className="relative p-4 mb-9 ">
-        <Swiper 
+ <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8,  }}
+          viewport={{ once: true, amount: 0.3 }}
+        >
+<div className="relative p-4 mb-9 ">
+        <Swiper
           modules={[Navigation]}
           navigation={{
             nextEl: ".custom-next",
@@ -89,6 +104,8 @@ const Testimonials = () => {
           <ChevronLeft />
         </button>
       </div>
+        </motion.div>
+      
     </section>
   );
 };

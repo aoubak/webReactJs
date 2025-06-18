@@ -38,7 +38,7 @@ function About() {
               <h2 className="text-3xl  font-bold mb-4">
                 Empowering Brands with Smart Digital Marketing
               </h2>
-              <p className="text-base sm:text-lg mb-5">
+              <p className="text-justify sm:text-lg mb-5">
                 At [Your Agency Name], we combine innovation with data-driven
                 strategies to deliver powerful digital marketing results. From
                 SEO and content creation to PPC and social media, we provide

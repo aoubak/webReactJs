@@ -3,12 +3,13 @@ import heroImage from "../assets/images/hero.png"; // Adjust the path as necessa
 import hero3dImage from "../assets/images/hero_3d.png"; // Adjust the path as necessary
 import Grid from "../assets/images/grid.png";
 import { motion } from "framer-motion";
+import Features from '../components/Features'
 
 export default function Hero() {
   return (
     <div
       style={{ backgroundImage: `url(${Grid})` }}
-      className=" md:h-[461px] bg-cover md:mb-10"
+      className=" md:h-[450px] bg-cover md:mb-10"
     >
       {/* <section className="bg-linear-65 bg-gradient-to-t from-slate-800  to-slate-700 text-white py-16 md:py-20"> */}
       <section className="bg-radial  from-emerald-900/20 from-10% to-gray-900 md:h-full text-gray-100 pt-20  md:pt-30">
@@ -68,6 +69,8 @@ export default function Hero() {
               </motion.div>
             </div>
           </div>
+
+          
           {/* <div className="flex-1 w-full flex justify-center">
                     <img
                         src={hero3dImage}
@@ -76,6 +79,7 @@ export default function Hero() {
                     />
                 </div> */}
         </div>
+        {/* <Features /> */}
       </section>
     </div>
   );
