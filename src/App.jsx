@@ -1,4 +1,4 @@
-
+import { Outlet } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import CTA_action from "./components/CTA_action";
@@ -12,23 +12,13 @@ import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
 
 function App() {
-
   return (
     <>
-     <Header />
-     <Hero />
-     <Features/>
-     <About />
-     <Services />
-     <Portfolio />
-     <Testimonials />
-     <CTA_action />
-     <Contact />
-     <Footer />
-     <ScrollToTopButton />
-     
+      <Header />
+      <Outlet />
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

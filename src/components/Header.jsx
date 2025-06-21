@@ -1,5 +1,7 @@
 import React, { use, useState } from "react";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
+import { Link } from "react-router";
+
 
 
 
@@ -23,14 +25,14 @@ export default function Header() {
           >
             <div className="flex flex-col md:flex-row md:space-x-4">
               <li className="w-full md:w-auto bg-gray-600/50 md:bg-transparent mb-2 md:mb-0 rounded-md md:rounded-none ">
-              <a className="hover:text-gray-400 block p-2" href="/">
+              <Link to="/" className="hover:text-gray-400 block p-2" href="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="w-full md:w-auto bg-gray-600/50 md:bg-transparent mb-2 md:mb-0 rounded-md ">
-              <a className="hover:text-gray-400 block p-2" href="#about">
+              <Link to="/about" className="hover:text-gray-400 block p-2" href="#about">
                 About
-              </a>
+              </Link>
             </li>
             <li className="w-full md:w-auto bg-gray-600/50 md:bg-transparent mb-2 md:mb-0 rounded-md ">
               <a className="hover:text-gray-400 block p-2" href="#services">

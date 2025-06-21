@@ -4,11 +4,12 @@ import LogoImage from "../assets/images/Logo.png";
 import { FaEnvelope } from "react-icons/fa";
 import { MdAddIcCall } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
+import ScrollToTopButton from "./ScrollToTopButton";
 
 function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-10 px-4 mt-10">
-      
+      <ScrollToTopButton /> 
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Company Info */}
         <div>
