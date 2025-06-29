@@ -10,10 +10,13 @@ import Portfolio from "./components/Portfolio";
 import ScrollToTopButton from "./components/ScrollToTopButton";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
+import ScrollToTop from "./components/ScrollToTop";
+
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Header />
       <Outlet />
       <Footer />

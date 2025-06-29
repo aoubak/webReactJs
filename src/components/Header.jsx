@@ -25,27 +25,27 @@ export default function Header() {
           >
             <div className="flex flex-col md:flex-row md:space-x-4">
               <li className="w-full md:w-auto bg-gray-600/50 md:bg-transparent mb-2 md:mb-0 rounded-md md:rounded-none ">
-              <Link to="/" className="hover:text-gray-400 block p-2" >
+              <Link to="/" onClick={() => setIsOpen(false)} className="hover:text-gray-400 block p-2" >
                 Home
               </Link>
             </li>
             <li className="w-full md:w-auto bg-gray-600/50 md:bg-transparent mb-2 md:mb-0 rounded-md ">
-              <Link to="about" className="hover:text-gray-400 block p-2" >
+              <Link to="about"  onClick={() => setIsOpen(false)} className="hover:text-gray-400 block p-2" >
                 About
               </Link>
             </li>
             <li className="w-full md:w-auto bg-gray-600/50 md:bg-transparent mb-2 md:mb-0 rounded-md ">
-              <Link to="services" className="hover:text-gray-400 block p-2" >
+              <Link to="services" onClick={() => setIsOpen(false)} className="hover:text-gray-400 block p-2" >
                 Services
               </Link>
             </li>
             <li className="w-full md:w-auto bg-gray-600/50 md:bg-transparent mb-2 md:mb-0 rounded-md ">
-              <Link to="portfolio" className="hover:text-gray-400 block p-2" >
+              <Link to="portfolio" onClick={() => setIsOpen(false)} className="hover:text-gray-400 block p-2" >
                 Portfolio
               </Link>
             </li>
             <li className="w-full md:w-auto bg-gray-600/50 md:bg-transparent mb-2 md:mb-0 rounded-md ">
-              <Link to="contact" className="hover:text-gray-400 block p-2" >
+              <Link to="contact" onClick={() => setIsOpen(false)} className="hover:text-gray-400 block p-2" >
                 Contact
               </Link>
             </li>
