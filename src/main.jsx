@@ -8,6 +8,9 @@ import "./index.css";
 import App from "./App";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
+import ServicesPage from "./pages/ServicesPage";
+import PortfolioPage from "./pages/PortfolioPage";
+import ContactPage from "./pages/ContactPage";
 
 
 
@@ -30,6 +33,18 @@ const router = createBrowserRouter(
         {
           path: "about",
           element: <AboutPage />,
+        },
+        {
+          path: "services",
+          element: <ServicesPage/>,
+        },
+        {
+          path: "portfolio",
+          element: <PortfolioPage/>,
+        },
+        {
+          path: "contact",
+          element: <ContactPage/>,
         }
       ],
     },

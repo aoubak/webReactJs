@@ -144,7 +144,7 @@ function Contact() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 , delay:0.3}}
                 viewport={{ once: true, amount: 0.3 }}
-                className="flex-1 flex-col md:flex-row bg-gray-700 rounded-md"
+                className="flex-1 flex-col md:flex-row bg-gradient-to-b   from-cyan-900 to-cyan-700 rounded-md"
               >
                  <div className="p-4">
             {/* header */}

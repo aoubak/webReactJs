@@ -25,29 +25,29 @@ export default function Header() {
           >
             <div className="flex flex-col md:flex-row md:space-x-4">
               <li className="w-full md:w-auto bg-gray-600/50 md:bg-transparent mb-2 md:mb-0 rounded-md md:rounded-none ">
-              <Link to="/" className="hover:text-gray-400 block p-2" href="/">
+              <Link to="/" className="hover:text-gray-400 block p-2" >
                 Home
               </Link>
             </li>
             <li className="w-full md:w-auto bg-gray-600/50 md:bg-transparent mb-2 md:mb-0 rounded-md ">
-              <Link to="/about" className="hover:text-gray-400 block p-2" href="#about">
+              <Link to="about" className="hover:text-gray-400 block p-2" >
                 About
               </Link>
             </li>
             <li className="w-full md:w-auto bg-gray-600/50 md:bg-transparent mb-2 md:mb-0 rounded-md ">
-              <a className="hover:text-gray-400 block p-2" href="#services">
+              <Link to="services" className="hover:text-gray-400 block p-2" >
                 Services
-              </a>
+              </Link>
             </li>
             <li className="w-full md:w-auto bg-gray-600/50 md:bg-transparent mb-2 md:mb-0 rounded-md ">
-              <a className="hover:text-gray-400 block p-2" href="#portfolio">
+              <Link to="portfolio" className="hover:text-gray-400 block p-2" >
                 Portfolio
-              </a>
+              </Link>
             </li>
             <li className="w-full md:w-auto bg-gray-600/50 md:bg-transparent mb-2 md:mb-0 rounded-md ">
-              <a className="hover:text-gray-400 block p-2" href="#contact">
+              <Link to="contact" className="hover:text-gray-400 block p-2" >
                 Contact
-              </a>
+              </Link>
             </li>
             {/* <li className="w-full md:w-auto bg-gray-600/50 md:bg-transparent mb-2 md:mb-0 rounded-md ">
               <a className="hover:text-gray-400 block p-2" href="/contact">
