@@ -61,15 +61,15 @@ function Features() {
             animate={{ opacity: 1, y: 0 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
-            className="w-full md:w-72 bg-linear-to-r hover:from-cyan-700 cursor-pointer hover:to-cyan-900 transition-colors duration-300 from-cyan-900 to-cyan-700 border-cyan-500/70 border flex justify-start items-center gap-4 p-4 bg-gray- rounded-md"
+            className="w-full md:w-72 bg-gray-200 text-gray-800 dark:text-neutral-100 dark:bg-linear-to-r dark:from-cyan-900 dark:to-cyan-700 hover:from-cyan-700 hover:to-cyan-900 cursor-pointer  transition-colors duration-300 border-cyan-700 dark:border-cyan-500/70 border flex justify-start items-center gap-4 p-4 bg-gray- rounded-md"
           >
             <div className="">
-              <span className="bg-cyan-700 p-2 border rounded-md border-cyan-500 inline-flex items-center justify-center">
+              <span className="bg-cyan-600 text-white dark:text-white dark:bg-cyan-700 p-2 border rounded-md border-cyan-500 dark:border-cyan-500 inline-flex items-center justify-center">
                 {Card.icon}
               </span>
             </div>
-            <div className="flex flex-col border-l pl-3 border-cyan-500">
-              <span className="text-3xl font-bold">{count}</span>
+            <div className="flex flex-col border-l pl-3 border-gray-500 dark:border-cyan-500">
+              <span className="text-3xl dark:text-white text-cyan-700 font-bold">{count}</span>
               <span className="text-lg">{Card.label}</span>
             </div>
           </motion.div>

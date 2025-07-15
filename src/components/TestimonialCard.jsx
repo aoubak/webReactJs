@@ -4,7 +4,7 @@ import { BiSolidQuoteRight } from "react-icons/bi";
 
 const TestimonialCard = ({ name, title, description, image }) => {
   return (
-    <div className="md:96 bg-gray-800 border p-4 rounded-md border-cyan-800 min-h-[250px] flex flex-col justify-between">
+    <div className="md:96 dark:bg-gray-800 dark:text-white border p-4 rounded-md border-cyan-800 min-h-[250px] flex flex-col justify-between">
       {/* Header */}
       <div className="flex justify-between items-center bg-slate-900 mb-4 p-2 rounded-md">
         <div className="flex flex-row items-center">
@@ -27,18 +27,18 @@ const TestimonialCard = ({ name, title, description, image }) => {
 
       {/* Content area (grow to fill space) */}
       <div className="flex flex-col justify-between flex-grow">
-        <p className="text-white mb-4 flex-grow">"{description}"</p>
+        <p className="mb-4 flex-grow">"{description}"</p>
 
         {/* Footer section (fixed to bottom) */}
         <div className="flex justify-between items-center mt-auto">
           <div className="flex space-x-2">
-            <span className="bg-cyan-700 p-2 hover:bg-cyan-800 cursor-pointer rounded-md border border-cyan-500">
+            <span className="dark:bg-cyan-700 dark:text-white text-cyan-700 hover:text-white transition-colors duration-300 p-2 hover:bg-cyan-800 cursor-pointer rounded-md border border-cyan-500">
               <FaFacebookF />
             </span>
-            <span className="bg-cyan-700 p-2 hover:bg-cyan-800 cursor-pointer rounded-md border border-cyan-500">
+            <span className="dark:bg-cyan-700 dark:text-white text-cyan-700 hover:text-white transition-colors duration-300 p-2 hover:bg-cyan-800 cursor-pointer rounded-md border border-cyan-500">
               <FaTwitter />
             </span>
-            <span className="bg-cyan-700 p-2 hover:bg-cyan-800 cursor-pointer rounded-md border border-cyan-500">
+            <span className="dark:bg-cyan-700 dark:text-white text-cyan-700 hover:text-white transition-colors duration-300 p-2 hover:bg-cyan-800 cursor-pointer rounded-md border border-cyan-500">
               <FaLinkedinIn />
             </span>
           </div>

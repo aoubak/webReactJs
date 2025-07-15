@@ -14,9 +14,22 @@ function Services() {
   return (
     <section
       id="services"
-      style={{ backgroundImage: `url(${bgColor})` }}
-      className="container   bg-cover bg-center  mx-auto p-4 text-[#efeeee]"
+      // style={{ backgroundImage: `url(${bgColor})` }}
+      className="container relative dark:text-white bg-cover bg-center  mx-auto p-4 "
     >
+      <div className="isolate -z-10">
+        <div className="absolute inset-0 z-10">
+          <div className="absolute top-0 -left-1/4 w-1/2 h-1/2 bg-green-400 dark:bg-green-500 rounded-full blur-3xl opacity-20 "></div>
+        </div>
+      </div>
+
+       <div className="isolate -z-50">
+        <div className="absolute inset-0 z-10">
+          <div className="absolute bottom-0 right-1 md:-right-1/4 w-1/2 h-1/2 bg-cyan-400 dark:bg-cyan-500 rounded-full blur-3xl opacity-20 "></div>
+        </div>
+      </div>
+
+
       <div className="md:text-center mb-8">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -24,6 +37,7 @@ function Services() {
           transition={{ duration: 0.7 }}
           viewport={{ once: true, amount: 0.3 }}
         >
+          
           <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Services</h1>
           <p className="text-justify md:text-center sm:text-lg">
             From strategy to execution, we deliver end-to-end digital marketing
@@ -66,7 +80,7 @@ function Services() {
           className="w-[100%] md:[50%] flex flex-col md:flex-row md:flex-wrap justify-end items-center gap-4 md:p-6"
         >
           
-          <div className="bg-gray-800 w-[100%]  md:w-[45%] p-6 rounded-lg shadow-lg min-h-[250px] border border-cyan-700 ">
+          <div className="dark:bg-gray-800 w-[100%]  md:w-[45%] p-6 rounded-lg shadow-lg min-h-[250px] border border-cyan-700 ">
             <span className="bg-cyan-900 p-2 mb-2 border border-cyan-600  rounded text-white inline-flex items-center justify-center">
               <Search className="w-6 h-6 text-cyan-400" strokeWidth={2.5} />
             </span>
@@ -82,7 +96,7 @@ function Services() {
               organic traffic.
             </p>
           </div>
-          <div className="bg-gray-800 w-[100%]  md:w-[45%] p-6 rounded-lg shadow-lg min-h-[250px] border border-cyan-700 ">
+          <div className="dark:bg-gray-800 w-[100%]  md:w-[45%] p-6 rounded-lg shadow-lg min-h-[250px] border border-cyan-700 ">
             <span className="bg-cyan-900 p-2 mb-2 border border-cyan-600  rounded text-white inline-flex items-center justify-center">
               <Dribbble className="w-6 h-6 text-cyan-400" strokeWidth={2.5} />
             </span>
@@ -93,7 +107,7 @@ function Services() {
               social media campaigns.
             </p>
           </div>
-          <div className="bg-gray-800 w-[100%]  md:w-[45%] p-6 rounded-lg shadow-lg min-h-[250px] border border-cyan-700 ">
+          <div className="dark:bg-gray-800 w-[100%]  md:w-[45%] p-6 rounded-lg shadow-lg min-h-[250px] border border-cyan-700 ">
             <span className="bg-cyan-900 p-2 mb-2 border border-cyan-600  rounded text-white inline-flex items-center justify-center">
               <ChartLine className="w-6 h-6 text-cyan-400" strokeWidth={2.5} />
             </span>
@@ -103,7 +117,7 @@ function Services() {
               target audience.
             </p>
           </div>
-          <div className="bg-gray-800 w-[100%]  md:w-[45%] p-6 rounded-lg shadow-lg min-h-[250px] border border-cyan-700 ">
+          <div className="dark:bg-gray-800 w-[100%]  md:w-[45%] p-6 rounded-lg shadow-lg min-h-[250px] border border-cyan-700 ">
             <span className="bg-cyan-900 p-2 mb-2 border border-cyan-600 rounded text-white inline-flex items-center justify-center">
               <CodeXml className="w-6 h-6 text-cyan-400" strokeWidth={2.5} />
             </span>

@@ -2,9 +2,16 @@ import React from "react";
 import aboutImage from "../assets/images/about.png"; // Adjust the path as necessary
 import { TiTick } from "react-icons/ti";
 import { motion } from "framer-motion";
+
 function About() {
+   // Define the color variable
   return (
-    <section id="about" className="container mx-auto p-4 text-[#efeeee]">
+    <section id="about" className=" relative container mx-auto p-4 dark:text-white">
+       <div className="isolate -z-10">
+        <div className="absolute inset-0 z-10">
+          <div className="absolute top-0 left-1/4 w-1/2 h-1/2 bg-cyan-400 dark:bg-cyan-500 rounded-full blur-3xl opacity-20 "></div>
+        </div>
+      </div>
       <div className="md:text-center mb-8">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -54,24 +61,24 @@ function About() {
               viewport={{ once: true, amount: 0.3 }}
             >
               <h1 className="text-xl font-bold mb-2">Core Values</h1>
-              <ul className="list-disc space-y-2 md:flex md:space-x-3 border-l-2  pl-3 border-cyan-500 mb-6">
+              <ul className="list-disc space-y-2 md:space-y-0 md:flex  items-center md:space-x-3 border-l-2  pl-3 border-cyan-500 mb-6">
                 <div>
                   <li className="flex space-x-2 items-center">
-                    <TiTick size={25} color="cyan" />
+                    <TiTick size={25} color="#0e7490" />
                     Data-Driven Strategy
                   </li>
                   <li className="flex space-x-2 items-center">
-                    <TiTick size={25} color="cyan" />
+                    <TiTick size={25} color="#0e7490" />
                     Transparent Reporting
                   </li>
                 </div>
                 <div>
                   <li className="flex space-x-2 items-center">
-                    <TiTick size={25} color="cyan" />
+                    <TiTick size={25} color="#0e7490" />
                     Client-Centered Approach
                   </li>
                   <li className="flex space-x-2 items-center">
-                    <TiTick size={25} color="cyan" /> Growth-Focused Solutions
+                    <TiTick size={25} color="#0e7490" /> Growth-Focused Solutions
                   </li>
                 </div>
               </ul>

@@ -6,7 +6,7 @@ function CTA_action() {
   return (
     <section
       style={{ backgroundImage: `url(${Ctabg})` }}
-      className="bg-radial  from-cyan-900 from-40% to-gray-900 mt-20 bg-center bg-cover  md:h-[300px]"
+      className="bg-radial  from-cyan-900/15 from-40% to-gray-900 mt-20 bg-center bg-cover  md:h-[300px]"
     >
       <div className="container mx-auto p-4 flex flex-col md:flex-row justify-between">
         <div className="flex-1 flex flex-col  justify-center">
@@ -16,10 +16,10 @@ function CTA_action() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true, amount: 0.3 }}
           >
-            <h1 className="text-4xl md:text-5xl  font-bold mb-2">
-              Let<span className="text-cyan-500">'</span>s{" "}
-              <span className="text-cyan-500">Boost</span> Your{" "}
-              <span className="text-cyan-500">Business</span>.
+            <h1 className="text-4xl md:text-5xl dark:text-white  font-bold mb-2">
+              Let<span className="text-cyan-700 dark:text-cyan-500">'</span>s{" "}
+              <span className="text-cyan-700 dark:text-cyan-500">Boost</span> Your{" "}
+              <span className="text-cyan-700 dark:text-cyan-500">Business</span>.
             </h1>
           </motion.div>
 
@@ -29,7 +29,7 @@ function CTA_action() {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true, amount: 0.3 }}
           >
-            <p className="mb-4">
+            <p className="mb-4 dark:text-white">
               Unlock your brand’s full potential with smart digital strategies.
               We help you grow faster, smarter, and stronger.
             </p>

@@ -11,7 +11,7 @@ function Contact() {
   return (
     <section id="Contact" className="container mx-auto mt-16">
       {/* Section header */}
-      <div className="md:text-center md:mb-8 p-4">
+      <div className="md:text-center dark:text-white md:mb-8 p-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -28,7 +28,7 @@ function Contact() {
       </div>
       {/* sectoin contant */}
       <div className="flex flex-col gap-8 md:flex-row p-4">
-        <div className=" flex-1 space-y-2 ">
+        <div className=" flex-1 dark:text-white space-y-2 ">
           {/* header */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -38,7 +38,7 @@ function Contact() {
           >
             <div>
               <h1 className="text-3xl font-bold">Get in touch</h1>
-              <p className="text-gray-300">
+              <p className="dark:text-gray-300">
                 Have a project in mind or need help boosting your online
                 presence? Let’s connect and bring your ideas to life. Whether
                 it’s a quick chat or a full proposal, we’re here to help.
@@ -55,15 +55,15 @@ function Contact() {
                 transition={{ duration: 0.8, delay:0.1 }}
                 viewport={{ once: true, amount: 0.3 }}
               >
-                <div className="flex justify-start items-start bg-gray-700/20 p-3 rounded-md gap-4">
+                <div className="flex justify-start items-start border border-cyan-700 dark:bg-gray-700/20 p-3 rounded-md gap-4">
                 <div>
-                  <span className="text-2xl bg-amber-200">
-                    <FaLocationDot />
+                  <span className="text-2xl text-cyan-700 dark:text-cyan-500 bg-amber-200">
+                    <FaLocationDot  />
                   </span>
                 </div>
                 <div className="flex flex-col">
                   <span className="font-bold">Location:</span>
-                  <span className="text-gray-400">
+                  <span className="text-gray-600 dark:text-gray-400">
                     Mogadishu, Somalia (or your city)
                   </span>
                 </div>
@@ -76,15 +76,15 @@ function Contact() {
                 transition={{ duration: 0.8, delay:0.2 }}
                 viewport={{ once: true, amount: 0.3 }}
               >
-                <div className="flex justify-start items-start bg-linear-to-r from-cyan-500/5 to-cyan-900 p-3 rounded-md gap-4">
+                <div className="flex justify-start items-start border border-cyan-700 bg-linear-to-r dark:bg-linear-to-r to-cyan-900/40 from-cyan-500/5 dark:to-cyan-900 p-3 rounded-md gap-4">
                 <div>
-                  <span className="text-2xl">
+                  <span className="text-2xl text-cyan-700 dark:text-cyan-500">
                     <MdAddIcCall />
                   </span>
                 </div>
                 <div className="flex flex-col">
                   <span>Phone:</span>
-                  <span className="text-gray-400">+123 456 7890</span>
+                  <span className="text-gray-600 dark:text-gray-400">+123 456 7890</span>
                 </div>
               </div>
               </motion.div>
@@ -95,15 +95,15 @@ function Contact() {
                 transition={{ duration: 0.8 , delay:0.3}}
                 viewport={{ once: true, amount: 0.3 }}
               >
-                <div className="flex justify-start items-start bg-gray-700/20 p-3 rounded-md gap-4">
+                <div className="flex justify-start items-start border border-cyan-700 dark:bg-gray-700/20 p-3 rounded-md gap-4">
                 <div>
-                  <span className="text-2xl bg-amber-300">
+                  <span className="text-2xl text-cyan-700 dark:text-cyan-500 bg-amber-300">
                     <FaEnvelope />
                   </span>
                 </div>
                 <div className="flex flex-col">
                   <span>Location</span>
-                  <span className="text-gray-400">
+                  <span className="text-gray-600 dark:text-gray-400">
                     Mogadishu, Somalia (or your city)
                   </span>
                 </div>
@@ -123,13 +123,13 @@ function Contact() {
               <div className="mt-2">
                 
                 <div className="flex space-x-2 ">
-                  <span className="bg-cyan-700 p-2 duration-300  hover:bg-cyan-800 cursor-pointer rounded-md border border-cyan-500">
+                  <span className="bg-cyan-700 p-2 text-white duration-300  hover:bg-cyan-800 cursor-pointer rounded-md border border-cyan-500">
                     <FaFacebookF />
                   </span>
-                  <span className="bg-cyan-700 p-2 duration-300  hover:bg-cyan-800 cursor-pointer rounded-md border border-cyan-500">
+                  <span className="bg-cyan-700 p-2 text-white duration-300  hover:bg-cyan-800 cursor-pointer rounded-md border border-cyan-500">
                     <FaTwitter />
                   </span>
-                  <span className="bg-cyan-700 p-2 duration-300  hover:bg-cyan-800 cursor-pointer rounded-md border border-cyan-500">
+                  <span className="bg-cyan-700 p-2 text-white duration-300  hover:bg-cyan-800 cursor-pointer rounded-md border border-cyan-500">
                     <FaLinkedinIn />
                   </span>
                 </div>
@@ -144,13 +144,13 @@ function Contact() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 , delay:0.3}}
                 viewport={{ once: true, amount: 0.3 }}
-                className="flex-1 flex-col md:flex-row bg-gradient-to-b   from-cyan-900 to-cyan-700 rounded-md"
+                className="flex-1 flex-col md:flex-row text-white dark:text-white bg-gradient-to-b   from-cyan-900 to-cyan-700 rounded-md"
               >
                  <div className="p-4">
             {/* header */}
             <div className="mb-4">
               <h1 className="text-3xl font-bold">Send a Message</h1>
-              <p className="text-gray-300">
+              <p className="">
                 We’d love to hear from you! Whether you have a question, project
                 idea, or need advice, drop us a message, and we’ll get back to
                 you as soon as possible.

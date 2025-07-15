@@ -6,8 +6,8 @@ import { motion } from "framer-motion";
 
 function Portfolio() {
   return (
-    <section id="portfolio" className="container mx-auto text-[#efeeee] ">
-      <div className="md:text-center md:mb-8 p-4">
+    <section id="portfolio" className="container mx-auto">
+      <div className="md:text-center dark:text-white md:mb-8 p-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -30,13 +30,13 @@ function Portfolio() {
             transition={{ duration: 0.8, delay: 0.1 }}
             viewport={{ once: true, amount: 0.3 }}
           >
-            <div className="bg-gray-800 w-full cursor-pointer md:96 p-4 rounded-lg shadow-lg shadow-cyan-700/5 border border-cyan-700">
+            <div className="dark:bg-gray-800 dark:text-white w-full cursor-pointer md:96 p-4 rounded-lg shadow-lg shadow-cyan-700/5 border border-cyan-700">
               <img
                 src={port1}
                 alt="Project 1"
                 className="w-full h-48 object-cover rounded-t-lg mb-4"
               />
-              <h2 className="text-xl font-bold mb-2">
+              <h2 className="text-xl  font-bold mb-2">
                 EcomPro – E-commerce Website Redesign
               </h2>
               <p className="text-base">
@@ -64,7 +64,7 @@ function Portfolio() {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true, amount: 0.3 }}
           >
-             <div className="bg-gray-800 w-full cursor-pointer md:96 p-4 rounded-lg shadow-lg shadow-cyan-700/5 border border-cyan-700">
+             <div className="dark:bg-gray-800 dark:text-white w-full cursor-pointer md:96 p-4 rounded-lg shadow-lg shadow-cyan-700/5 border border-cyan-700">
             <img
               src={port2}
               alt="Project 2"
@@ -98,7 +98,7 @@ function Portfolio() {
             transition={{ duration: 0.8, delay: 0.3 }}
             viewport={{ once: true, amount: 0.3 }}
           >
-            <div className="bg-gray-800 w-full cursor-pointer md:96 p-4 rounded-lg shadow-lg shadow-cyan-700/5 border border-cyan-700">
+            <div className="dark:bg-gray-800 dark:text-white w-full cursor-pointer md:96 p-4 rounded-lg shadow-lg shadow-cyan-700/5 border border-cyan-700">
             <img
               src={port3}
               alt="Project 3"
@@ -125,11 +125,11 @@ function Portfolio() {
           
         </div>
 
-        <div className="flex items-center justify-center">
+        <div className="flex items-center dark:text-white justify-center">
           {" "}
           <a
             href="/contact"
-            className=" mt-4 border duration-300  border-cyan-600 hover:bg-cyan-600 text-white font-bold py-2 px-6 rounded inline-block"
+            className=" mt-4 border duration-300  border-cyan-600 hover:bg-cyan-600 font-bold py-2 px-6 rounded inline-block"
           >
             View More
           </a>

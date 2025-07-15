@@ -19,7 +19,7 @@ import { motion } from "framer-motion";
 const Testimonials = () => {
   return (
     <section className="container mx-auto">
-      <div className="md:text-center md:mb-8 p-4">
+      <div className="md:text-center dark:text-white md:mb-8 p-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}

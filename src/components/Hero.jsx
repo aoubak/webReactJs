@@ -3,16 +3,27 @@ import heroImage from "../assets/images/hero.png"; // Adjust the path as necessa
 import hero3dImage from "../assets/images/hero_3d.png"; // Adjust the path as necessary
 import Grid from "../assets/images/grid.png";
 import { motion } from "framer-motion";
-import Features from '../components/Features'
+import Features from "../components/Features";
 
 export default function Hero() {
   return (
     <div
-      style={{ backgroundImage: `url(${Grid})` }}
+      // style={{ backgroundImage: `url(${Grid})` }}
       className=" md:h-[450px] bg-cover md:mb-10"
     >
+      <div className="isolate">
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute top-0 -left-1/4 w-1/2 h-1/2 bg-green-400 dark:bg-green-500 rounded-full blur-3xl opacity-20 "></div>
+        </div>
+      </div>
+
+      <div className="isolate">
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute top-0 right-1 md:-right-1/4 w-1/2 h-1/2 bg-cyan-400 dark:bg-cyan-500 rounded-full blur-3xl opacity-30  "></div>
+        </div>
+      </div>
       {/* <section className="bg-linear-65 bg-gradient-to-t from-slate-800  to-slate-700 text-white py-16 md:py-20"> */}
-      <section className="bg-radial  from-emerald-900/20 from-10% to-gray-900 md:h-full text-gray-100 pt-20  md:pt-30">
+      <section className="dark:bg-radial   from-emerald-900/20 from-10% to-gray-900 md:h-full dark:text-gray-100 pt-20  md:pt-30">
         <div className="container  mx-auto p-4 flex flex-col md:flex-row justify-center items-center gap-8">
           <div className="flex-1 w-full text-left md:text-center mb-8 md:mb-0">
             <motion.div
@@ -48,29 +59,29 @@ export default function Hero() {
               >
                 <a
                   href="/get-started"
-                  className="bg-radial from-cyan-700 from-20% to-gray-900 
- border-1 border-cyan-700 hover:bg-transparent hover:from-cyan-900  text-white font-bold transition-colors duration-300 py-3 px-6 rounded-full inline-block"
+                  className="bg-linear-90 from-cyan-700/20 to-cyan-700/30
+                  border-1 border-cyan-700 hover:bg-cyan-700 hover:text-white hover:from-cyan-900 
+                 font-bold transition-colors duration-300 py-3 px-6 rounded-full inline-block"
                 >
                   🚀 Get Started
                 </a>
               </motion.div>
-              
+
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
               >
                 <a
-                href="/get-started"
-                className="bg-transparent border-1 border-cyan-700 duration-300  hover:bg-radial transition-colors from-cyan-700 from-20% to-gray-900  hover:bg-cyan-700 text-white font-bold py-3 px-6 rounded-full"
-              >
-                📞 Book a Free Call
-              </a>
+                  href="/get-started"
+                  className="bg-transparent border-1 border-cyan-700 duration-300  hover:bg-linear-90 transition-colors from-cyan-700 from-20% to-from-cyan-700  hover:bg-cyan-700 hover:text-white dark:text-white font-bold py-3 px-6 rounded-full"
+                >
+                  📞 Book a Free Call
+                </a>
               </motion.div>
             </div>
           </div>
 
-          
           {/* <div className="flex-1 w-full flex justify-center">
                     <img
                         src={hero3dImage}
