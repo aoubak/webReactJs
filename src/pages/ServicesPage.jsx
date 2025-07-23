@@ -8,13 +8,10 @@ import Contact from "../components/Contact";
 export default function ServicesPage() {
   return (
     <>
-      <section className="container mx-auto mt-30">
-        <div
-          style={{ backgroundImage: `url(${Grid})` }}
-          className="bg-center bg-cover flex justify-center items-center rounded-2xl bg-gradient-to-b  from-cyan-800 to-gray-800 h-50"
-        >
-          <h1 className="text-5xl">
-            Our <span className="font-bold text-cyan-400">Services</span>
+      <section className="container mx-auto pt-30">
+       <div className="mb-10   bg-center bg-cover flex justify-center items-center md:rounded-2xl bg-gradient-to-b  from-cyan-800 to-gray-800 h-50">
+          <h1 className="text-5xl text-white">
+            <span className="font-bold text-cyan-400">Services </span> {" "}
           </h1>
         </div>
         <Features />

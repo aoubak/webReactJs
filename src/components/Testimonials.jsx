@@ -18,7 +18,7 @@ import { motion } from "framer-motion";
 
 const Testimonials = () => {
   return (
-    <section className="container mx-auto">
+    <section className="container mx-auto relative">
       <div className="md:text-center dark:text-white md:mb-8 p-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -105,7 +105,7 @@ const Testimonials = () => {
         </button>
       </div>
         </motion.div>
-      
+      <div className="absolute bottom-0 right-1 md:right-1/4 w-1/2 h-1/2 bg-cyan-500 dark:bg-cyan-500 rounded-full blur-3xl opacity-20 "></div>
     </section>
   );
 };

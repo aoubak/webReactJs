@@ -14,7 +14,11 @@ import ScrollToTop from "./components/ScrollToTop";
 import { useEffect, useState } from "react";
 
 function App() {
-   const [darkMode, setDarkMode] = useState(false);
+   const [darkMode, setDarkMode] = useState(()=>{
+
+    const savedMode = localStorage.getItem("darkMode");
+    return savedMode ? JSON.parse (savedMode) : false;
+   }); 
   
     useEffect(() =>{
       if(darkMode){
@@ -23,6 +27,9 @@ function App() {
       else{
         document.documentElement.classList.remove("dark");
       }
+
+      // Save to localStorage on every change
+    localStorage.setItem("darkMode", JSON.stringify(darkMode));
     },[darkMode]);
   
     const toggleDarkMode =()=>{
@@ -46,7 +53,7 @@ function App() {
 
          <div className=" fixed top-8 cursor-pointer right-20 lg:right-10 z-1000 lg:top-8">
          <button onClick={toggleDarkMode} className=" text-white dark:bg-cyan-950 dark:text-white flex cursor-pointer justify-center items-center w-9 h-9 shadow-md shadow-cyan-700 border border-cyan-400 bg-cyan-700 duration-300 rounded-full  md:mb-0 ">
-        <i className={`bxr  bx-${darkMode ? "moon-star" : "sun-bright"}`}></i> 
+        <i className={`bxr bx-${darkMode ? "moon-star" : "sun-bright"}`}></i> 
         </button>
        </div>
 
