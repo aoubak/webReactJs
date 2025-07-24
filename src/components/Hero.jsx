@@ -60,7 +60,7 @@ export default function Hero() {
                   border-1 border-cyan-700 hover:bg-cyan-700 hover:text-white hover:from-cyan-900 
                  font-bold transition-colors duration-300 py-3 px-6 rounded-full inline-block"
                 >
-                  🚀 Get Started
+                   Get Started
                 </a>
               </motion.div>
 
@@ -73,7 +73,7 @@ export default function Hero() {
                   href="/get-started"
                   className="bg-transparent border-1 border-cyan-700 duration-300  hover:bg-linear-90 transition-colors from-cyan-700 from-20% to-from-cyan-700  hover:bg-cyan-700 hover:text-white dark:text-white font-bold py-3 px-6 rounded-full"
                 >
-                  📞 Book a Free Call
+                   Book a Free Call
                 </a>
               </motion.div>
             </div>

@@ -11,6 +11,7 @@ import AboutPage from "./pages/AboutPage";
 import ServicesPage from "./pages/ServicesPage";
 import PortfolioPage from "./pages/PortfolioPage";
 import ContactPage from "./pages/ContactPage";
+import Login from "./pages/login";
 
 
 
@@ -45,6 +46,10 @@ const router = createBrowserRouter(
         {
           path: "contact",
           element: <ContactPage/>,
+        },
+        {
+          path: "login",
+          element: <Login/>,
         }
       ],
     },

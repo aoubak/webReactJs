@@ -3,15 +3,39 @@ import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { Link } from "react-router";
 
 export default function Header() {
+  const [darkMode, setDarkMode] = useState(() => {
+    const savedMode = localStorage.getItem("darkMode");
+    return savedMode ? JSON.parse(savedMode) : false;
+  });
 
- 
+  useEffect(() => {
+    if (darkMode) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
 
+    // Save to localStorage on every change
+    localStorage.setItem("darkMode", JSON.stringify(darkMode));
+  }, [darkMode]);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
 
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className="fixed  top-0  left-0 w-full z-50">
-     
+      <div className="md:hidden fixed top-8 cursor-pointer right-20 lg:right-10 z-1000 lg:top-8">
+        <button
+          onClick={toggleDarkMode}
+          className=" text-white dark:bg-cyan-950 dark:text-white flex cursor-pointer justify-center items-center w-9 h-9 shadow-md shadow-cyan-700 border border-cyan-400 bg-cyan-700 duration-300 rounded-full  md:mb-0 "
+        >
+          <i className={`bxr bx-${darkMode ? "moon-star" : "sun-bright"}`}></i>
+        </button>
+      </div>
+
       <nav className=" mx-auto relative p-2  ">
         <div className="container mx-auto flex justify-between items-center border border-cyan-800 rounded md:rounded-full mt-2 mb-2  dark:text-white p-4  dark:bg-gray-800/50 backdrop-blur-md shadow shadow-cyan-900 ">
           <div className="text-2xl font-bold">
@@ -77,6 +101,18 @@ export default function Header() {
             </li> */}
             </div>
             <div className="flex flex-col md:flex-row md:space-x-4">
+              <div className="md:block hidden cursor-pointer md:mb-0 mb-2  z-1000 ">
+                <button
+                  onClick={toggleDarkMode}
+                  className=" text-white dark:bg-cyan-950 dark:text-white flex cursor-pointer justify-center items-center w-9 h-9 shadow-md shadow-cyan-700 border border-cyan-400 bg-cyan-700 duration-300 rounded-full  md:mb-0 "
+                >
+                  <i
+                    className={`bxr bx-${
+                      darkMode ? "moon-star" : "sun-bright"
+                    }`}
+                  ></i>
+                </button>
+              </div>
               <li className="w-full md:w-auto">
                 <a
                   className=" hover:bg-cyan-600 text-white bg-cyan-700 duration-300 rounded md:rounded-full px-4 py-2  mb-2 md:mb-0 block"
@@ -104,7 +140,6 @@ export default function Header() {
             </button>
           </div>
         </div>
-      
       </nav>
     </header>
   );
