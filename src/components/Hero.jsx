@@ -9,7 +9,7 @@ import Features from "../components/Features";
 export default function Hero() {
   return (
     <div
-      // style={{ backgroundImage: `url(${Grid})` }}
+      //  style={{ backgroundImage: `url(${Grid})` }}
       className="h-[650px]  md:h-[750px] bg-cover md:mb-10 overflow-hidden"
     >
      
